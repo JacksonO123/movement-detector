@@ -1,0 +1,16 @@
+video {
+  display: none;
+}
+
+#moving {
+  height: 150px;
+  width: 300px;
+}
+
+.moving {
+  background: red;
+}
+
+.not-moving {
+  background: green;
+}
