@@ -20,8 +20,8 @@ class Color {
 }
 
 const maxWiggleAmount = 5;
-const drawing = true;
-// const drawing = false;
+// const drawing = true;
+const drawing = false;
 const highlightColor = !drawing ? new Color(255, 0, 0) : new Color(255, 255, 255);
 
 navigator.mediaDevices
