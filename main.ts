@@ -90,9 +90,15 @@ function mutateData(pixels: Uint8ClampedArray) {
       } else {
       }
       moving = true;
-      pixels[i] = 255 - (i / pixels.length) * 255;
-      pixels[i + 1] = (i / pixels.length) * 255;
-      pixels[i + 2] = (i / pixels.length) * 255;
+      if (drawing) {
+        pixels[i] = 255 - (i / pixels.length) * 255;
+        pixels[i + 1] = (i / pixels.length) * 255;
+        pixels[i + 2] = (i / pixels.length) * 255;
+      } else {
+        pixels[i] = 255;
+        pixels[i + 1] = 0;
+        pixels[i + 2] = 0;
+      }
     } else {
       if (drawing) {
         pixels[i] = 0;
